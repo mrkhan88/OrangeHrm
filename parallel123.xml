@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="ParallelSuite">
+  <test thread-count="5" parallel="classes" name="Unittesting">
+    <classes>
+      
+      <class name="com.OrangeHrm.DemoTestNG"/>
+     
+    </classes>
+  </test> <!-- Unittesting -->
+  
+  <test thread-count="5" parallel="classes" name="Smoketest">
+    <classes>
+    
+      <class name="com.OrangeHrm.Yahoo"/>
+     <class name="com.OrangeHrm.GoogleHome"/>
+      
+    </classes>
+  </test> <!-- Unittesting -->
+  
+    <test thread-count="5" parallel="classes" name="Regression">
+    <classes>
+     
+      <class name="com.OrangeHrm.OrangehrmHome"/>
+      
+    </classes>
+  </test> <!-- Unittesting -->
+  
+  
+</suite> <!-- ParallelSuite -->
