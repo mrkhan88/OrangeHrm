@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dataProvider.ReadExcel">
+      <class name="macys.Ebay">
         <methods>
-          <include name="login"/>
+          <include name="testmouseHover"/>
         </methods>
-      </class> <!-- com.dataProvider.ReadExcel -->
+      </class> <!-- macys.Ebay -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
